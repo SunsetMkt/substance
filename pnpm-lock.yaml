@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   useragent: npm:@kingyue/useragent@^2.4.0
 
@@ -29,8 +33,8 @@ importers:
         specifier: ^29.5.0
         version: 29.5.0
       axios:
-        specifier: ^1.3.4
-        version: 1.3.4
+        specifier: ^1.6.0
+        version: 1.6.0
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -142,8 +146,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
       axios:
-        specifier: ^1.2.2
-        version: 1.2.2
+        specifier: ^1.6.0
+        version: 1.6.0
       domelementtype:
         specifier: ^2.3.0
         version: 2.3.0
@@ -228,8 +232,8 @@ importers:
         version: 13.2.0(sass@1.57.1)(webpack@5.77.0)
     devDependencies:
       '@reorx/webpack-ext-reloader':
-        specifier: ^1.2.0
-        version: 1.2.0(webpack-cli@5.0.1)(webpack@5.77.0)
+        specifier: ^1.3.0
+        version: 1.6.3(webpack-cli@5.0.1)(webpack@5.77.0)
       '@types/chrome':
         specifier: ^0.0.207
         version: 0.0.207
@@ -2395,20 +2399,21 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@reorx/webpack-ext-reloader@1.2.0(webpack-cli@5.0.1)(webpack@5.77.0):
-    resolution: {integrity: sha512-htclDTqmzPf3deBhbLJpTUxFzXD5Q1tHaLbshATeLWWbr2d8uur3iBKfPx1b6OGC5Wj5Xlsak7DW7K67qjpa9g==}
+  /@reorx/webpack-ext-reloader@1.6.3(webpack-cli@5.0.1)(webpack@5.77.0):
+    resolution: {integrity: sha512-TFrZEa+CwnYgD16G/OCUb5+8Edyq7hljjfS0VD4zJB5IhR1FEKHn2nbhk4xxBAoSqJSpptizGACSqrRKG0wS+w==}
     hasBin: true
     peerDependencies:
       webpack: ^5.61.0
     dependencies:
+      '@kingyue/useragent': 2.4.0
       '@types/webpack': 5.28.1(webpack-cli@5.0.1)
       '@types/webpack-sources': 3.2.0
       clean-webpack-plugin: 4.0.0(webpack@5.77.0)
       colors: 1.4.0
       cross-env: 7.0.3
+      json5: 2.2.3
       lodash: 4.17.21
       minimist: 1.2.8
-      useragent: /@kingyue/useragent@2.4.0
       webpack: 5.77.0(webpack-cli@5.0.1)
       webpack-sources: 3.2.3
       ws: 8.13.0
@@ -3082,25 +3087,14 @@ packages:
       - debug
     dev: true
 
-  /axios@1.2.2:
-    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
+  /axios@1.6.0:
+    resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
-    dev: true
-
-  /axios@1.3.4:
-    resolution: {integrity: sha512-toYm+Bsyl6VC5wSkfkbbNB6ROv7KY93PEBBL6xyDczaIHasAiv4wPqQ/c4RjoQzipxRD2W5g21cOqQulZ7rHwQ==}
-    dependencies:
-      follow-redirects: 1.15.2
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /babel-jest@29.5.0(@babel/core@7.21.3):
     resolution: {integrity: sha512-mA4eCDh5mSo2EcA9xQjVTpmbbNk32Zb3Q3QFQsNhaK56Q+yoXowzFodLux30HRgyOho5rsQ6B0P9QpMkvvnJ0Q==}
